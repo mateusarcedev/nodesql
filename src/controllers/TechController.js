@@ -26,7 +26,7 @@ module.exports = {
 
     const user = await User.findByPk(user_id)
 
-    if(!user) {
+    if(!user) {0
       return res.status(400).json({ error: 'User not found' });
     }
 
